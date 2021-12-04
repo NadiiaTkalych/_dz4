@@ -1,7 +1,21 @@
+@font-face {
+  font-family: 'Gill Sans MT', sans-serif;
+  src: local();
+  src: url('../fonts/Gill Sans MT Bold.ttf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Gill Sans MT', sans-serif;
+  src: url('../fonts/Gill-Sans-MT-B.TTF');
+  font-weight: bold;
+}
+
 body {
     font-family: "Gill Sans MT";
     font-size: 20px;
-    font-weight: 400;
+    font-weight: normal;
+    line-height: 1.2em;
   }
   
   *{
@@ -9,7 +23,7 @@ body {
   }
   
   h1, h2, h3, h4, h5, h6 {
-    font-weight: 700;
+    font-weight: bold;
     color: #26272d;
     line-height: 72px;
   }
@@ -31,7 +45,25 @@ body {
     padding: 0;
     margin: 0;
   }
+
+  button {
+    background: url('../img/Menu.svg') no-repeat center top / cover;
+  }
+
+  button:hover {
+    background-color: #226DD2;
+    box-shadow: 0 8px 20px rgb(37 0 249 /25%);
+    transition: background-color, box-shadow 0.5s ease;
+  }
+
+  }
   
+  button:active {
+    background-color: #226DD2;
+    box-shadow: none;
+    transition: background-color, box-shadow 0.5s ease;
+  }
+
   .container {
     width: 1140px;
     margin: 0 auto;
@@ -60,7 +92,6 @@ body {
     background-color: #226DD2;
     box-shadow: none;
     transition: background-color, box-shadow 0.5s ease;
-
   }
 
   .section-title {
@@ -68,7 +99,28 @@ body {
   }
   
   /* header */
-  
+  .header {
+    background: url('../img/header.jpg') no-repeat center top / cover;
+  }
+
+  .menu__item a{
+    color: #26272d;
+    transition: color 0.5s ease;
+  }
+
+  .menu__item_active a {
+    color: #1b1c1e;
+  }
+
+  .menu__item a:hover {
+    color: #1b1c1e;
+    transition: color 0.5s ease;
+  }
+
+  .logo img{
+    display: block;
+    margin-right: auto;
+  }
   /* features */
   /* iPhone */
   /* map */
