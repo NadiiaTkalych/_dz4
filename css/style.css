@@ -132,10 +132,18 @@ body {
     color: #8c8f94;
   }
 
+  .nav__btn_primary {
+     padding: 13px 25px 13px 17px;
+  }
+
   .btn_primary::before {
     content: '';
     display: block;
     background: url('../img/apple.svg');
+  }
+  
+  .nav__btn_primary img {
+    margin: -5px 15px 0 0;
   }
 
 /* 
@@ -171,6 +179,10 @@ body {
     background: #34b2ed;
     border: 1px solid #34b2ed;
     transition: border, color, background, 0.5s ease;
+  }
+
+  .btn_secondary img {
+    margin-right: 15px;
   }
 
   .offer-img {
