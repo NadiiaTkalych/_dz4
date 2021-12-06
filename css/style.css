@@ -1,31 +1,30 @@
 @font-face {
-  font-family: 'Gill Sans MT', sans-serif;
-  src: local();
-  src: url('../fonts/Gill Sans MT Bold.ttf');
+  font-family: 'GillSansMT';
+  src: url('../fonts/GillSansMTExtraBold.ttf');
   font-weight: normal;
 }
 
 @font-face {
-  font-family: 'Gill Sans MT', sans-serif;
-  src: url('../fonts/Gill-Sans-MT-B.TTF');
+  font-family: 'GillSansMT';
+  src: url('../fonts/GillSansMTBold.ttf');
   font-weight: bold;
 }
 
 body {
-    font-family: "Gill Sans MT";
+    font-family: 'Ubuntu', sans-serif;
     font-size: 20px;
     font-weight: normal;
     line-height: 1.2em;
   }
   
-  *{
+  * {
     box-sizing: border-box;
   }
   
   h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
     color: #26272d;
-    line-height: 72px;
+    line-height: 1.4em;
   }
   
   p {
@@ -47,22 +46,21 @@ body {
   }
 
   button {
-    background: url('../img/Menu.svg') no-repeat center top / cover;
+    border: none;
+    width: 20px;
+    height: 12px;
+    background: url('../img/nav.svg') no-repeat center top / cover;
+    transition: width, height 0.1s ease;
   }
 
   button:hover {
-    background-color: #226DD2;
-    box-shadow: 0 8px 20px rgb(37 0 249 /25%);
-    transition: background-color, box-shadow 0.5s ease;
-  }
-
+    width: 25px;
+    height: 15px;
+    transition: width, height 0.5s ease;
   }
   
-  button:active {
-    background-color: #226DD2;
-    box-shadow: none;
-    transition: background-color, box-shadow 0.5s ease;
-  }
+  /* button:active {
+  } */
 
   .container {
     width: 1140px;
@@ -70,61 +68,173 @@ body {
   }
   
   .btn {
-    border-radius: 21px;
-    background-color: #267df4;
+    border-radius: 25px;
     font-size: 16px;
-    color: #ffffff;
     font-weight: 400;
     text-align: center;
     padding: 15px 33px;
+    background-color: #267df4;
+    color: #ffffff;
     transition: background-color 0.5s ease;
-    /* margin: 0 auto;
-    text-align: center; */
   }
 
   .btn:hover {
-    background-color: #226DD2;
-    box-shadow: 0 8px 20px rgb(37 0 249 /25%);
+    color: #ffffff;
+    background-color: #34b2ed;
+    box-shadow: 0 8px 20px rgb(0 0 0 /25%);
     transition: background-color, box-shadow 0.5s ease;
   }
   
-  .btn:active {
-    background-color: #226DD2;
+  /* .btn:active {
+    background-color: #34b2ed;
     box-shadow: none;
     transition: background-color, box-shadow 0.5s ease;
-  }
+  } */
 
   .section-title {
     text-align: center;
   }
+
+  .section__text {
+
+  }
   
   /* header */
+
   .header {
+    padding: 44px 0 0;
     background: url('../img/header.jpg') no-repeat center top / cover;
   }
 
-  .menu__item a{
+  .nav {
+    max-width: 100%;
+  }
+
+  .nav__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav__item {
+    margin-right: 43px;
+  }
+  .nav__item a {
     color: #26272d;
     transition: color 0.5s ease;
   }
 
-  .menu__item_active a {
-    color: #1b1c1e;
-  }
-
-  .menu__item a:hover {
-    color: #1b1c1e;
+  .nav__item a:hover {
+    color: #8c8f94;
     transition: color 0.5s ease;
   }
 
-  .logo img{
-    display: block;
-    margin-right: auto;
+  .nav__item_active a {
+    color: #8c8f94;
   }
+
+  .btn_primary::before {
+    content: '';
+    display: block;
+    background: url('../img/apple.svg');
+  }
+
+/* 
+  .logo {
+    background: url('img/logo.png');
+  } */
+
+  .offer {
+    max-width: 780px;
+    margin: 74px 0 40px;
+  }
+
+  .offer__title {
+    font-size: 62px;
+  }
+
+  .offer__text {
+    margin: 41px 0 66px;
+    text-align: center;
+  }
+  .btn_secondary {
+    color: #26272d;
+    background: none;
+    border: 1px solid #26272d;
+    display: block;
+    max-width: 205px;
+    margin: 0 auto;
+    transition: border, color, background 0.5s ease;
+  }
+
+  .btn_secondary:hover {
+    color: #fff;
+    background: #34b2ed;
+    border: 1px solid #34b2ed;
+    transition: border, color, background, 0.5s ease;
+  }
+
+  .offer-img {
+    background: url('../img/iphone.svg');
+    width: 443px;
+    height: 464px;
+  }
+
   /* features */
-  /* iPhone */
+
+  .features {
+    padding: 124px 0 38px;
+  }
+
+  .features-wrap {
+    max-width: 500px;
+  }
+
+  .section__title {
+    margin: 42px 0 34px;
+  }
+
+  .section__text:not(last-of-type) {
+    margin-bottom: 30px;
+  }
+
+  /* iphone */
+
+  .iphone {
+    padding: 78px 0 30px;
+  }
+  
+  .iphone-img {
+    background: url('../img/iphone_6.png');
+    width: 774px;
+    height: 680px;
+    margin-left: -111px;
+  }
+
   /* map */
+
+  .map {
+    padding: 141px 0;
+  }
   /* footer */
+
+  .footer {
+    padding: 106px 0 268px;
+  }
+  .footer-title {
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+
+  .footer-nav__item a{
+    color: #8c8f94;
+    font-size: 16px;
+    transition: color 0.5s ease;
+  }
+
+  .footer-nav__item a:hover {
+    color: #26272d;
+    transition: color 0.5s ease;
+  }
   
   /*  RESPONSIVE  */
   

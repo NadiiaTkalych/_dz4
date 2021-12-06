@@ -22,60 +22,71 @@
   <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
   <link rel="stylesheet" href="css/bootstrap-grid.min.css">
   <!-- CSS -->
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">  -->
+  <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  -->
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet"> -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <!--  header  -->
   <header class="header" id="header">
     <div class="container">
-        <div class="row">
-            <div class="col-4">
-                <button type="button"></button>
-                <nav class="menu">
-                    <ul class="menu__list">
-                        <li class="menu__item menu__item_active">
+        <div class="row align-items-center">
+            <div class="col-4 d-flex">
+                <button type="button" class="burger d-lg-none"></button>
+                <nav class="nav d-none d-lg-block">
+                    <ul class="nav__list">
+                        <li class="nav__item nav__item_active">
                             <a href="#">Tour</a>
                         </li>
-                        <li class="menu__item">
+                        <li class="nav__item">
                             <a href="#">Features</a>
                         </li>
-                        <li class="menu__item">
+                        <li class="nav__item">
                             <a href="#">Pricing</a>
                         </li>
                     </ul>
                 </nav>
             </div>
-            <div class="col-4">
+            <div class="col-4 ml-auto">
                 <a href="#home-page" class="logo">
                     <img src="img/logo.png" alt="FULLviewapp">
                 </a>
             </div>
-                <div class="col">
-                    <ul class="menu__list">
-                        <li class="menu__item menu__item_active">
-                            <a href="#">Help</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#">Contacts</a>
-                        </li>
-                    </ul>
-                    <a href="#" class="btn btn_offer">Get App</a>
-                </div>
-            </div>
-        <div class="row">
-            <div class="col">
-                <h1 class="offer__title">
-                What happens tomorrow?
-                </h1>
-                <p class="offer__text">
-                    The sight of the tumblers restored Bob Sawyer to a degree of equanimity which he had not possessed since his interview with his landlady. His face brightened up, and he began to feel quite convivial.
-                </p>
-                <a href="#" class="btn btn_offer">Watch Video</a>
+            <div class="col-4 d-none d-lg-flex align-items-center ml-auto">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#">Help</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#">Contacts</a>
+                    </li>
+                </ul>
+                <a href="#" class="btn nav__btn_primary">
+                    <!-- <img src="img/apple.svg" alt=""> -->
+                    Get App
+                </a>
             </div>
         </div>
         <div class="row">
-            <div class="col">
-                <img src="img/iPhone.png" alt="">
+            <div class="col d-flex justify-content-center">
+                <div class="offer">
+                    <h1 class="offer__title">
+                        What happens tomorrow?
+                    </h1>
+                    <p class="offer__text">
+                        The sight of the tumblers restored Bob Sawyer to a degree of equanimity which he had not possessed since his interview with his landlady. His face brightened up, and he began to feel quite convivial.
+                    </p>
+                    <a href="#" class="btn btn_secondary">
+                        <img src="img/play.svg" alt="">
+                        Watch Video
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+                <div class="offer-img"></div>
             </div>
         </div>
     </div>
@@ -83,36 +94,155 @@
 <!--  features  -->
     <section class="features" id="features">
         <div class="container">
-        <div class="row">
-            <div class="col"></div>
-            <div class="col"></div>
-        </div>
-        <div class="row">
-            <div class="col"></div>
-            <div class="col"></div>
-        </div>
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="features-wrap">
+                        <img src="img/lock.svg" alt="lock">
+                        <h3 class="section__title">Real-time all the time</h3>
+                        <p class="section__text">
+                            Thus much I thought proper to tell you in relation to yourself, and to the trust I reposed in you.
+                        </p>
+                        <p class="section__text">
+                            Just then her head struck against the roof of the hall: in fact she was now more than nine feet high, and she at once took up the little golden key and hurried off to the garden door.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="features-wrap">
+                        <img src="img/clock.svg" alt="clock">
+                        <h3 class="section__title">Adopt without any obstacles</h3>
+                        <p class="section__text">
+                            This sounded a very good reason, and Alice was quite pleased to know it. 'I never thought of that before!' she said.
+                        </p>
+                        <p class="section__text">
+                            This I have produced as a scantling of Jack’s great eloquence and the force of his reasoning upon such abstruse matters.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-<!--  iPhone  -->
-    <section class="iPhone" id="iPhone">
+<!--  iphone  -->
+    <section class="iphone" id="iphone">
         <div class="container">
-        
+            <div class="row">
+                <div class="col-12 col-lg-7">
+                    <div class="iphone-img"></div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <h2 class="section__title">Your day <span class="d-lg-block">protected</span></h2>
+                    <p class="section__text">
+                        This sounded a very good reason, and Alice was quite pleased to know it. 'I never thought of that before!' she said.
+                    </p>
+                    <p class="section__text">
+                        This I have produced as a scantling of Jack’s great eloquence and the force of his reasoning upon such abstruse matters.
+                    </p>
+                    <div class="btn-wrap">
+                        <a href="#" class="btn btn-hack">Try to hack us
+                            <img src="img/arrow_next.svg" alt="">
+                        </a>
+                        <a href="#" class="btn btn-more">Learn more</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <!--  map  -->
     <section class="map" id="map">
         <div class="container">
-        
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="location">
+                        <h2 class="section__title">We are almost <span class=d-lg-block>everywhere</span></h2>
+                        <p class="section__text">
+                            Now the races of these two have been for some ages utterly extinct, and besides to discourse any further of them would not be at all to my purpose
+                        </p>
+                        <p class="section__text">
+                            Thus much I thought proper to tell you in relation to yourself, and to the trust I reposed in you.
+                        </p>
+                    </div>
+                    <div class="partners">
+                        <h4>Partners</h4>
+                        <a href="#" class="btn-partners">
+                            <img src="img/dropbox.png" alt="dropbox">
+                        </a>
+                        <a href="#" class="btn-partners">
+                            <img src="img/evernote.png" alt="evernote">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-7">
+                    <img src="img/map.png" alt="lock">
+                </div>
+            </div>
         </div>
     </section>
 <!--  footer  -->
     <footer class="footer" id="footer">
         <div class="container">
             <div class="row">
-                <div class="col"></div>
-                <div class="col"></div>
-                <div class="col"></div>
-                <div class="col"></div>
+                <div class="col-3"
+                    <a href="#home-page" class="logo">
+                        <img src="img/logo.png" alt="FULLviewapp">
+                    </a>
+                    <p class="footer-text">
+                        It was some time before he obtained any answer, and the reply, when made, was unpropitious.
+                    </p>
+                    <a href="#home-page" class="logo">
+                        <img src="img/download.png" alt="">
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-2 offset-lg-1">
+                    <h3 class="footer-title">Learn More</h3>
+                    <ul class="footer-nav">
+                        <li class="footer-nav__item">
+                            <a href="">How it works?</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="">Meeting tools</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="">Live striming</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="">Contat method</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg-2 offset-lg-1">
+                    <h3 class="footer-title">About Us</h3>
+                    <ul class="footer-nav">
+                        <li class="footer-nav__item">
+                            <a href="">About us</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="">Features</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="">Privacy police</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="">Terms & Conditions</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg-2 offset-lg-1">
+                    <h3 class="footer-title">Support</h3>
+                    <ul class="footer-nav">
+                        <li class="footer-nav__item">
+                            <a href="">F.A.Q.</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="">Contact us</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="">Live chat</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="">Phone call</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </footer>
