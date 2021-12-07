@@ -69,9 +69,6 @@ body {
     height: 15px;
     transition: width, height 0.5s ease;
   }
-  
-  /* button:active {
-  } */
 
   .container {
     width: 1140px;
@@ -83,7 +80,6 @@ body {
     font-size: 16px;
     font-weight: light;
     text-align: center;
-    padding: 8px 33px 7px;
     background-color: #267df4;
     color: #fff;
     transition: background-color 0.5s ease;
@@ -91,9 +87,23 @@ body {
 
   .btn:hover {
     color: #ffffff;
-    background-color: #34b2ed;
+    background-color: #618bc5;
     box-shadow: 0 8px 20px rgb(0 0 0 /25%);
     transition: background-color, box-shadow 0.5s ease;
+  }
+
+  .btn__secondary {
+    color: #26272d;
+    background: none;
+    border: 1px solid #26272d;
+    transition: border, color, background 0.5s ease;
+  }
+
+  .btn__secondary:hover {
+    color: #fff;
+    background: #267df4;
+    border: 1px solid #267df4;
+    transition: border, color, background, 0.5s ease;
   }
   
   /* .btn:active {
@@ -102,10 +112,6 @@ body {
     transition: background-color, box-shadow 0.5s ease;
   } */
 
-  /* .section__text {
-    margin-bottom: 30px;
-  } */
-  
   /* header */
 
   .header {
@@ -124,6 +130,7 @@ body {
 
   .nav__item {
     margin-right: 43px;
+
   }
   .nav__item a {
     font-size: 16px;
@@ -170,23 +177,12 @@ body {
     margin: 24px 0 60px;
     text-align: center;
   }
-
+  
   .btn__secondary_offer {
-    color: #26272d;
-    background: none;
-    border: 1px solid #26272d;
     display: block;
     max-width: 205px;
     margin: 0 auto;
     padding: 12px 48px 9px 42px;
-    transition: border, color, background 0.5s ease;
-  }
-
-  .btn__secondary_offer:hover {
-    color: #fff;
-    background: #267df4;
-    border: 1px solid #267df4;
-    transition: border, color, background, 0.5s ease;
   }
 
   .btn__secondary_offer img {
@@ -242,20 +238,30 @@ body {
     margin-top: 75px;
   }
 
-  .btn-hack {
+  .btn__primary_hack {
     max-width: 202px;
     margin-right: 20px;
+    padding: 9px 33px;
   }
-/* 
-  .btn_primary::after {
+
+  .btn__primary_hack::after {
     content: '';
     display: block;
-    background: url('../img/apple.svg');
-  } */
-  <img src="img/arrow_next.svg" alt="">
-                        
-  .btn-more {
+    background: url('../img/arrow_next.svg');
+    width: 13px;
+    height: 12px;
+    margin-left: 15px;
+    transition: ;
+  }
 
+  .btn__primary_hack::after:hover {
+    margin-left: 15px;
+  }
+
+  
+  .btn__secondary_more {
+    padding: 8px 33px;
+    
   }
 
   /* map */
@@ -275,13 +281,16 @@ body {
   }
 
   .btn-partners_dropbox {
-    background: url('../img/dropbox.png') cover;
+    display: block;
+    background: url('../img/dropbox.png') no-repeat;
     width: 125px;
-    height: 34px;
+    margin-right: 31px;
+    height: 38px;
   }
 
   .btn-partners_evernote {
-    background: url('../img/evernote.png');
+    display: block;
+    background: url('../img/evernote.png') no-repeat;
     width: 138px;
     height: 35px;
   }
