@@ -29,6 +29,8 @@ body {
   
   p {
     color: #8c8f94;
+    padding: 0;
+    margin: 0;
   }
   
   a {
@@ -93,10 +95,11 @@ body {
 
   .section-title {
     text-align: center;
+    margin: 42px 0 34px;
   }
 
   .section__text {
-
+    margin-bottom: 30px;
   }
   
   /* header */
@@ -176,8 +179,8 @@ body {
 
   .btn_secondary:hover {
     color: #fff;
-    background: #34b2ed;
-    border: 1px solid #34b2ed;
+    background: #267df4;
+    border: 1px solid #267df4;
     transition: border, color, background, 0.5s ease;
   }
 
@@ -201,18 +204,18 @@ body {
     max-width: 500px;
   }
 
-  .section__title {
-    margin: 42px 0 34px;
+  .section__title_features {
+    font-size: 26px;
   }
-
-  .section__text:not(last-of-type) {
-    margin-bottom: 30px;
-  }
-
   /* iphone */
 
   .iphone {
     padding: 78px 0 30px;
+  }
+
+  .section__title_iphone {
+    font-size: 42px;
+    margin: 20px 0 64px;
   }
   
   .iphone-img {
@@ -220,6 +223,20 @@ body {
     width: 774px;
     height: 680px;
     margin-left: -111px;
+    overflow-x: hidden;
+  }
+
+  .btn-wrap {
+    margin-top: 75px;
+  }
+
+  .btn-hack {
+    max-width: 202px;
+    margin-right: 20px;
+  }
+
+  .btn-more {
+
   }
 
   /* map */
@@ -227,6 +244,30 @@ body {
   .map {
     padding: 141px 0;
   }
+
+  .section__title_map {
+    font-size: 42px;
+    margin: 0 0 57px;
+  }
+
+  .partners {
+      margin-top: 69px;
+  }
+
+  .map-img {
+    background: url('../img/map.png');
+    width: 627px;
+    height: 401px;
+    margin-right: -111px;
+    overflow-x: hidden;
+  }
+
+  .section__title_partners {
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 31px;
+  }
+  
   /* footer */
 
   .footer {
