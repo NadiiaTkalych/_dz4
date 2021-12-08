@@ -105,6 +105,10 @@ body {
     border: 1px solid #267df4;
     transition: border, color, background, 0.5s ease;
   }
+
+  .section__text:not(:last-child) {
+    margin-bottom: 22px;
+  }
   
   /* .btn:active {
     background-color: #34b2ed;
@@ -209,11 +213,11 @@ body {
     font-size: 26px;
     margin: 37px 0 35px;
   }
-
-  .section__text_span {
-    height: 22px;
+ 
+  .section__text_features {
+    font-size: 18px;
+    
   }
-
   /* iphone */
 
   .iphone {
