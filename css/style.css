@@ -56,7 +56,7 @@ body {
     border: none;
     width: 20px;
     height: 12px;
-    background: url('../img/nav.svg') no-repeat center top / cover;
+    background: url('../img/burger.svg') no-repeat center top / cover;
     transition: width, height 0.1s ease;
   }
 
@@ -288,7 +288,7 @@ body {
   .btn-partners_dropbox {
     display: block;
     background: url('../img/dropbox.png') no-repeat center center;
-    max-width: 125px;
+    width: 125px;
     height: 38px;
     margin-right: 31px;
   }
@@ -296,7 +296,7 @@ body {
   .btn-partners_evernote {
     display: block;
     background: url('../img/evernote.png') no-repeat;
-    max-width: 138px;
+    width: 138px;
     height: 35px;
   }
 
