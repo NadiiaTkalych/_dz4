@@ -239,9 +239,14 @@ body {
   }
 
   .btn__primary_hack {
-    max-width: 202px;
     margin-right: 20px;
-    padding: 9px 33px;
+    padding: 9px 52px 9px 26px;
+    transition: padding 0.5s ease;
+  }
+
+  .btn__primary_hack:hover {
+    padding: 9px 19px 9px 26px;
+    transition: padding 0.5s ease;
   }
 
   .btn__primary_hack::after {
@@ -250,18 +255,18 @@ body {
     background: url('../img/arrow_next.svg');
     width: 13px;
     height: 12px;
-    margin-left: 15px;
-    transition: ;
+    margin-left: 19px;
+    transition: margin-left 0.5s ease;
   }
 
-  .btn__primary_hack::after:hover {
-    margin-left: 15px;
+  .btn__primary_hack:hover::after {
+    margin-left: 52px;
+    transition: margin-left 0.5s ease;
   }
 
   
   .btn__secondary_more {
     padding: 8px 33px;
-    
   }
 
   /* map */
@@ -299,7 +304,7 @@ body {
     background: url('../img/map.png');
     width: 627px;
     height: 401px;
-    margin-right: -111px;
+    margin-left: 40px;
     overflow-x: hidden;
   }
 
