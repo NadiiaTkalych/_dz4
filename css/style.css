@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'GillSansMT';
-  src: url('../fonts/GillSansMTLight.ttf');
-  font-weight: light;
+  src: url('../fonts/GillSansMTMedium.ttf');
+  font-weight: medium;
 }
 
 @font-face {
@@ -13,7 +13,7 @@
 body {
     font-family: 'GillSansMT', sans-serif;
     font-size: 20px;
-    font-weight: normal;
+    font-weight: medium;
     line-height: 1.4em;
   }
   
@@ -23,10 +23,6 @@ body {
     font-family: 'Gill Sans MT', sans-serif;
     outline: none;
     border: none;
-  }
-
-  * {
-    box-sizing: border-box;
   }
   
   h1, h2, h3, h4, h5, h6 {
@@ -78,18 +74,18 @@ body {
   .btn {
     border-radius: 25px;
     font-size: 16px;
-    font-weight: light;
+    font-weight: medium;
     text-align: center;
-    background-color: #267df4;
+    background: #267df4;
     color: #fff;
-    transition: background-color 0.5s ease;
+    transition: background 0.5s ease;
   }
 
   .btn:hover {
     color: #ffffff;
-    background-color: #618bc5;
+    background: #618bc5;
     box-shadow: 0 8px 20px rgb(0 0 0 /25%);
-    transition: background-color, box-shadow 0.5s ease;
+    transition: background, box-shadow 0.5s ease;
   }
 
   .btn__secondary {
@@ -129,7 +125,7 @@ body {
 
   .nav__list {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
   }
 
   .nav__item {
@@ -161,10 +157,10 @@ body {
 
   .logo {
     background: url('../img/logo.png');
-    width: 133px;
+    max-width: 133px;
     height: 15px;
     display: block;
-    margin: 0 auto;
+    margin: auto;
   }
 
   .offer {
@@ -186,7 +182,7 @@ body {
     display: block;
     max-width: 205px;
     margin: 0 auto;
-    padding: 12px 48px 9px 42px;
+    padding: 12px 45px 9px 42px;
   }
 
   .btn__secondary_offer img {
@@ -291,16 +287,16 @@ body {
 
   .btn-partners_dropbox {
     display: block;
-    background: url('../img/dropbox.png') no-repeat;
-    width: 125px;
-    margin-right: 31px;
+    background: url('../img/dropbox.png') no-repeat center center;
+    max-width: 125px;
     height: 38px;
+    margin-right: 31px;
   }
-
+  
   .btn-partners_evernote {
     display: block;
     background: url('../img/evernote.png') no-repeat;
-    width: 138px;
+    max-width: 138px;
     height: 35px;
   }
 
@@ -331,16 +327,15 @@ body {
 
   .footer-text {
     font-size: 14px;
-    width: 235px;
+    max-width: 235px;
     line-height: 1.7em;
     margin-bottom: 22px;
   }
 
   .btn-download {
     display: block;
-    width: 140px;
+    max-width: 140px;
     padding: 0px 0px 0px 45px;
-    font-weight: bold;
     font-size: 10px;
     color: #fff;
     background: #1b1c1e;
@@ -353,15 +348,10 @@ body {
     background: #267df4;
     transition: background 0.5s ease;
   }
-/* 
-  .btn-download::before {
-    background: url('../img/apple.svg');
-  } */
 
   .btn-download span {
     display: block;
     font-size: 16px;
-    font-weight: bold;
     margin: -15px 0 0 0px;
   }
 
@@ -377,7 +367,7 @@ body {
     background: url('../img/apple.svg');
   }
 
-  .footer-title {
+  .footer-nav__title {
     font-size: 12px;
     text-transform: uppercase;
     margin-bottom: 14px;
