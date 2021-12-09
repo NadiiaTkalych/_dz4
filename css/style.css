@@ -231,7 +231,7 @@ body {
   }
   
   .iphone-img {
-    background: url('../img/iphone_6.png');
+    background: url('../img/iphone_6.png') no-repeat center center / contain;
     width: 774px;
     height: 645px;
     margin-left: -111px;
@@ -445,15 +445,46 @@ body {
     .map {
       padding-bottom: 30px;
     }
+    .map-img {
+      margin: 0;
+    }
     .footer {
       padding: 80px 0 100px;
     }
     .footer-nav__list {
-      margin-bottom: 30px;
+      margin-bottom: 50px;
     }
   }
 
- 
+  @media (max-width: 768px) {
+    .offer__title {
+      font-size: 40px;
+    }
+    .features {
+      padding-top: 60px;
+    }
+    .section__title {
+      margin: 20px 0 15px;
+    }
+    .section__text:not(:last-child) {
+      margin-bottom: 13px;
+    }
+    .section__title_iphone,
+    .section__title_map {
+      font-size: 36px;
+    }
+    .btn-wrap {
+      margin-top: 35px;
+    }
+    .iphone-img {
+      max-width: 100%;
+      margin: 0;
+    }
+    /* .btn-wrap {
+      margin: 0;
+    } */
+  }
+
 
   /* @media (max-width: 1200px) {
     .design-img {
