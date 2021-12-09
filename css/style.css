@@ -71,9 +71,16 @@ body {
   }
 
   .btn__primary:hover {
+    color: #fff;
     background-color: #618bc5;
     box-shadow: 0 8px 20px rgb(0 0 0 /25%);
     transition: background-color, box-shadow 0.5s ease;
+  }
+   
+  .btn__primary:active {
+    opacity: 0.5;
+    box-shadow: none;
+    transition: opacity, box-shadow 0.5s ease;
   }
 
   .btn__secondary {
@@ -90,15 +97,14 @@ body {
     transition: border, color, background-color, 0.5s ease;
   }
 
+  .btn__secondary:active {
+    opacity: 0.5;
+    transition: opacity 0.5s ease;
+  }
+
   .section__text:not(:last-child) {
     margin-bottom: 22px;
   }
-  
-  /* .btn:active {
-    background-color: #34b2ed;
-    box-shadow: none;
-    transition: background-color, box-shadow 0.5s ease;
-  } */
 
   /* header */
 
@@ -125,8 +131,8 @@ body {
 
   .nav__item {
     margin-right: 43px;
-
   }
+
   .nav__item a {
     font-size: 16px;
     color: #26272d;
@@ -140,6 +146,10 @@ body {
 
   .nav__item_active a {
     color: #8c8f94;
+  }
+
+  .nav__item_seconary {
+    margin-right: 33px;
   }
 
   .btn__primary_nav {
@@ -174,7 +184,6 @@ body {
   }
   
   .btn__secondary_offer {
-    display: block;
     max-width: 205px;
     margin: 0 auto;
     padding: 12px 45px 9px 42px;
@@ -207,7 +216,6 @@ body {
  
   .section__text_features {
     font-size: 18px;
-    
   }
 
   /* iphone */
@@ -260,7 +268,6 @@ body {
     transition: margin-left 0.5s ease;
   }
 
-  
   .btn__secondary_more {
     padding: 8px 33px;
   }
@@ -308,8 +315,8 @@ body {
   }
 
   .map-img {
-    background: url('../img/map.png');
-    max-width: 627px;
+    background: url('../img/map.png') no-repeat center center / cover;
+    width: 100%;
     height: 401px;
     margin-left: 40px;
     overflow: hidden;
@@ -411,42 +418,6 @@ body {
   }
   
   /*  RESPONSIVE  */
-  
-  
-  /* Large: 992px - 1199px */
-  @media (max-width: 1199px) {
-      .container {
-          max-width: 960px;
-      }
-  }
-  /* Medium: 768px - 991px */
-  @media (max-width: 991px) {
-      .container {
-          max-width: 720px;
-      }
-  }
-  
-  /* Small: 576px - 767px */
-  @media (max-width: 767px) {
-      .container {
-          max-width: 540px;
-      }
-  }
-  
-  /* Extra small: 451px - 575px */
-  @media (max-width: 575px) {
-      .container {
-          padding: 0 15px;
-          width: auto;
-      }
-  }
-  
-  /* Andrew`s breakpoint: 0px (320px) - 450px */
-  @media (max-width: 450px) {
-      .break {
-          display: none;
-      }
-  }
 
 
 
